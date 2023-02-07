@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  max-width: 1280px;
+  height: 100vh;
+  display: flex;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+}
+.slider {
+  /* height: 17rem; */
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.tr{
+  background-color:#F7F7F7;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+border-radius: 16 px;
+margin: 1rem;
+height: auto;
+}
+.tr:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.item .title{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: justify;
+padding-bottom: 10px;
+color: #272727;
+  margin: 1rem;
+
+}
+.item img {
+  height: 10rem;
+  border-top-left-radius: 4px;
+  border-top-right-radius:4px ;
+}
+
+.next,
+.prev {
+  font-family: monospace;
+  font-size: 5rem;
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: rgb(100,100,100, 0.5);
+  /* ====try-paing======== */
+  margin-top: 90px;
+
+}
+.prev{
+  transform: rotate(-180deg);
+}
+.next:hover{
+  text-shadow: 2px 2px 2px rgb(200,200,200);
+}
+.prev:hover{
+  text-shadow: 2px -2px 2px rgb(200,200,200);
+}
+
+.item {
+  flex: 1 0 25%;
+  min-height: 200px;
+  text-align: center;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .item {
+    flex: 1 0 33%;
+  }
+}
+@media (max-width: 768px) {
+  .item {
+    flex: 1 0 50%;
+  }
+}
+@media (max-width: 576px) {
+  .item {
+    flex: 1 0 100%;
+  }
+}
+/* body {
+    background: #000;  
+  
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  .lead{
+    font-size:16.px;
+  }
+  .card {
+    border: 0;
+    margin: 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .slick-dots li button:before{
+    color:#fff!important;
+    font-size: 18px;
+  }
+  .card-body h3{
+    color:#000;
+    align-item:left;
+    font-weght:600;
+    margin:40px 0px 0px 0px;
+    
+  }
+  .cust_card_btn_div{
+    margin:0px 0px 50px;
+    
+  }
+  .cust_card_btn{
+    color:#fff;
+    Background:#991B1E
+  ;
+    padding:16px 40px; 
+    position:absolute;
+    right:0px;
+  }
+  .card-body span{
+    background:#991B1E;
+    border-radius:4px;
+    padding:10px 15px;
+  color:#fff;
+    position:relative;
+    float:right;
+    margin-bottom:50px;
+    
+  }  */
+  

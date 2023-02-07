@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <!-- <script>
+        $(document).ready(function(){
+    $('.items').slick({
+      dots: true,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 3,
+      slidesToScroll: 2,
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+
+      ]
+    });
+  });
+    </script> -->
+
+</head>
+<body>
+   <div class="wrapper">
+      <button class="prev" type="button" onclick="prevSlide(this)">➤</button>
+      <div class="slider">
+        <div class="item">
+         <div class="tr">
+            <img src="images/fnl.png" alt="" style="width: 100%;">
+            <p class="title"> i id arcu tinc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur id ut interdum arcu enid arcu tinc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur id ut interdum arcu e</p>
+         </div>
+        </div>
+
+         <div class="item">
+         <div class="tr">
+            <img src="images/grp.png" alt="" style="width: 100%;">
+            <p class="title"> i id arcu tinc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur id ut interdum arcu enid arcu tinc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur id ut interdum arcu e</p>
+         </div>
+        </div>
+
+         <div class="item">
+         <div class="tr">
+            <img src="images/crm.png" alt="" style="width: 100%;">
+            <p class="title"> i id arcu tinc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur id ut interdum arcu enid arcu tinc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur id ut interdum arcu e</p>
+         </div>
+        </div>
+
+         <div class="item">
+         <div class="tr">
+            <img src="images/fnl.png" alt="" style="width: 100%;">
+            <p class="title"> i id arcu tinc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur id ut interdum arcu enid arcu tinc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur id ut interdum arcu e</p>
+         </div>
+        </div>
+
+      </div>
+      <button class="next" type="button" onclick="nextSlide(this)">➤</button>
+    </div>
+<!-- <div class="container">
+   <div class="row">
+      <div class="col-lg-12">
+         <h2 class="text-center py-5 text-white">Satisfied Clients</h2>
+         <div class="items">
+            <div class="card">
+               <div class="cust_card_btn_div">
+                  <a class="cust_card_btn my-5" href="#">
+                  Project
+                  </a>
+               </div>
+               <div class="card-body">
+                  <h3 class="text-left py-4  ">Satisfied Clients</h3>
+                  <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span><i class="fa fa-plus"></i></span>
+               </div>
+            </div>
+            <div class="card">
+                <div class="cust_card_btn_div">
+                  <a class="cust_card_btn my-5" href="#">
+                  Project
+                  </a>
+               </div>
+               <div class="card-body">
+                  <h3 class="text-left py-4  ">Satisfied Clients</h3>
+                  <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span><i class="fa fa-plus"></i></span>
+               </div>
+            </div>
+            <div class="card">
+                <div class="cust_card_btn_div">
+                  <a class="cust_card_btn my-5" href="#">
+                  Project
+                  </a>
+               </div>
+               <div class="card-body">
+                  <h3 class="text-left py-4  ">Satisfied Clients</h3>
+                  <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span><i class="fa fa-plus"></i></span>
+               </div>
+            </div>
+            <div class="card">
+                <div class="cust_card_btn_div">
+                  <a class="cust_card_btn my-5" href="#">
+                  Project
+                  </a>
+               </div>
+               <div class="card-body">
+                  <h3 class="text-left py-4  ">Satisfied Clients</h3>
+                  <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span><i class="fa fa-plus"></i></span>
+               </div>
+            </div>
+            <div class="card">
+                <div class="cust_card_btn_div">
+                  <a class="cust_card_btn my-5" href="#">
+                  Project
+                  </a>
+               </div>
+               <div class="card-body">
+                  <h3 class="text-left py-4  ">Satisfied Clients</h3>
+                  <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span><i class="fa fa-plus"></i></span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+    <script src="main.js"></script> -->
+    <script>
+      const nextSlide = (event) => {
+      const slider = event.parentNode.children[1]
+      slider.append(slider.children[0])
+    }
+    const prevSlide = (event) => {
+      const slider = event.parentNode.children[1]
+      slider.prepend(slider.children[slider.children.length - 1])
+    }
+    </script>
+   
+
+</body>
+</html>
